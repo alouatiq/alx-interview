@@ -14,3 +14,19 @@ This project implements an algorithm in Python to generate Pascal’s Triangle u
 ## Function Signature
 ```python
 def pascal_triangle(n):
+```
+
+## Example
+```
+>>> pascal_triangle(5)
+[[1],
+ [1, 1],
+ [1, 2, 1],
+ [1, 3, 3, 1],
+ [1, 4, 6, 4, 1]]
+```
+
+How to Run
+```
+$ python3 0-main.py
+```
