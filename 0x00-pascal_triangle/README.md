@@ -26,7 +26,7 @@ def pascal_triangle(n):
  [1, 4, 6, 4, 1]]
 ```
 
-How to Run
+## How to Run
 ```
 $ python3 0-main.py
 ```
