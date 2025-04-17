@@ -4,6 +4,7 @@
 Returns a list of lists of integers representing Pascal’s Triangle.
 """
 
+
 def pascal_triangle(n):
     """
     Return a list of lists of integers representing the Pascal’s triangle of n rows.
@@ -25,7 +26,8 @@ def pascal_triangle(n):
 
 
 if __name__ == "__main__":
-    # this block only runs when executed directly, not when imported by the auto‑checker
+    # this block only runs when executed directly, not when imported by the
+    # auto‑checker
     from sys import argv
 
     try:
