@@ -1,18 +1,29 @@
 #!/usr/bin/python3
+"""Check if all boxes can be unlocked using keys from other boxes."""
+
+
 def canUnlockAll(boxes):
-    """Determines if all boxes can be opened."""
+    """
+    Determines if all the boxes can be opened.
+
+    Args:
+        boxes (list of list of int): A list where each element is a list
+        of keys contained in that box.
+
+    Returns:
+        bool: True if all boxes can be opened, False otherwise.
+    """
     if not boxes or not isinstance(boxes, list):
         return False
 
-    n = len(boxes)
-    visited = set([0])
-    stack = [0]
+    opened = set([0])  # Start with box 0 as opened
+    stack = [0]        # Stack for DFS
 
     while stack:
-        current = stack.pop()
-        for key in boxes[current]:
-            if 0 <= key < n and key not in visited:
-                visited.add(key)
+        box = stack.pop()
+        for key in boxes[box]:
+            if isinstance(key, int) and 0 <= key < len(boxes) and key not in opened:
+                opened.add(key)
                 stack.append(key)
 
-    return len(visited) == n
+    return len(opened) == len(boxes)
