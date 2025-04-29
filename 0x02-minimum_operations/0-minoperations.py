@@ -1,17 +1,14 @@
 #!/usr/bin/python3
 """Module for minimum operations problem."""
 
-
 def minOperations(n):
-    """Calculate the fewest number of operations
-    needed to get n H characters.
-    
+    """Compute the minimum operations to produce n H characters.
+
     Args:
-        n (int): The number of H characters desired.
-        
+        n (int): Target number of H characters.
+
     Returns:
-        int: Minimum number of operations needed,
-        or 0 if impossible.
+        int: Fewest number of operations or 0 if impossible.
     """
     if n < 2:
         return 0
