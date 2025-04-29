@@ -3,13 +3,15 @@
 
 
 def minOperations(n):
-    """Calculate the fewest number of operations needed to get n H characters.
+    """Calculate the fewest number of operations
+    needed to get n H characters.
     
     Args:
         n (int): The number of H characters desired.
         
     Returns:
-        int: Minimum number of operations needed, or 0 if impossible.
+        int: Minimum number of operations needed,
+        or 0 if impossible.
     """
     if n < 2:
         return 0
