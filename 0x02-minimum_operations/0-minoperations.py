@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for minimum operations problem."""
 
+
 def minOperations(n):
     """Compute the minimum operations to produce n H characters.
 
