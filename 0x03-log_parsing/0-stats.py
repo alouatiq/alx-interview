@@ -15,12 +15,14 @@ status_counts = {
 total_size = 0
 line_counter = 0
 
+
 def print_stats():
     """Prints the collected statistics."""
     print("File size: {}".format(total_size))
     for code in sorted(status_counts.keys()):
         if status_counts[code]:
             print("{}: {}".format(code, status_counts[code]))
+
 
 try:
     for line in sys.stdin:
