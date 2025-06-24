@@ -3,6 +3,7 @@
 Prime Game - determine the winner after x rounds
 """
 
+
 def sieve_of_eratosthenes(n):
     """Return a list of prime counts up to n using sieve."""
     sieve = [True] * (n + 1)
@@ -18,6 +19,7 @@ def sieve_of_eratosthenes(n):
             count += 1
         primes_count[i] = count
     return primes_count
+
 
 def isWinner(x, nums):
     """Determine who is the winner of most rounds.
